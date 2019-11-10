@@ -7,7 +7,7 @@
     <meta name="description" content="">
     
     
-    <link rel="preload" href="/shadow/assets/css/0.styles.934a921f.css" as="style"><link rel="preload" href="/shadow/assets/js/app.8beeb3c1.js" as="script"><link rel="preload" href="/shadow/assets/js/9.ad524e1a.js" as="script"><link rel="prefetch" href="/shadow/assets/js/10.810e4fdb.js"><link rel="prefetch" href="/shadow/assets/js/2.8d45b1a8.js"><link rel="prefetch" href="/shadow/assets/js/3.283bacec.js"><link rel="prefetch" href="/shadow/assets/js/4.69bc81f6.js"><link rel="prefetch" href="/shadow/assets/js/5.763dcc61.js"><link rel="prefetch" href="/shadow/assets/js/6.7c574742.js"><link rel="prefetch" href="/shadow/assets/js/7.78675443.js"><link rel="prefetch" href="/shadow/assets/js/8.28204efb.js"><link rel="prefetch" href="/shadow/assets/js/11.79206bad.js"><link rel="prefetch" href="/shadow/assets/js/12.1338f856.js"><link rel="prefetch" href="/shadow/assets/js/13.b3371b94.js"><link rel="prefetch" href="/shadow/assets/js/14.16244fd6.js"><link rel="prefetch" href="/shadow/assets/js/15.f0c09511.js"><link rel="prefetch" href="/shadow/assets/js/16.61ddc7d8.js"><link rel="prefetch" href="/shadow/assets/js/17.0c6b57a8.js"><link rel="prefetch" href="/shadow/assets/js/18.6e27c2bd.js"><link rel="prefetch" href="/shadow/assets/js/19.c02e3a9a.js"><link rel="prefetch" href="/shadow/assets/js/20.3c1197e7.js"><link rel="prefetch" href="/shadow/assets/js/21.15aa2a5c.js">
+    <link rel="preload" href="/shadow/assets/css/0.styles.934a921f.css" as="style"><link rel="preload" href="/shadow/assets/js/app.496ce1b9.js" as="script"><link rel="preload" href="/shadow/assets/js/9.340f3311.js" as="script"><link rel="prefetch" href="/shadow/assets/js/10.810e4fdb.js"><link rel="prefetch" href="/shadow/assets/js/2.8d45b1a8.js"><link rel="prefetch" href="/shadow/assets/js/3.283bacec.js"><link rel="prefetch" href="/shadow/assets/js/4.69bc81f6.js"><link rel="prefetch" href="/shadow/assets/js/5.763dcc61.js"><link rel="prefetch" href="/shadow/assets/js/6.7c574742.js"><link rel="prefetch" href="/shadow/assets/js/7.78675443.js"><link rel="prefetch" href="/shadow/assets/js/8.ae4c1044.js"><link rel="prefetch" href="/shadow/assets/js/11.79206bad.js"><link rel="prefetch" href="/shadow/assets/js/12.1338f856.js"><link rel="prefetch" href="/shadow/assets/js/13.b3371b94.js"><link rel="prefetch" href="/shadow/assets/js/14.16244fd6.js"><link rel="prefetch" href="/shadow/assets/js/15.f0c09511.js"><link rel="prefetch" href="/shadow/assets/js/16.61ddc7d8.js"><link rel="prefetch" href="/shadow/assets/js/17.0c6b57a8.js"><link rel="prefetch" href="/shadow/assets/js/18.6e27c2bd.js"><link rel="prefetch" href="/shadow/assets/js/19.c02e3a9a.js"><link rel="prefetch" href="/shadow/assets/js/20.3c1197e7.js"><link rel="prefetch" href="/shadow/assets/js/21.15aa2a5c.js">
     <link rel="stylesheet" href="/shadow/assets/css/0.styles.934a921f.css">
   </head>
   <body>
@@ -21,13 +21,13 @@ This means that all attributes and methods available on <code>Jar</code> are als
 <a href="http://imperceptiblethoughts.com/shadow/api/com/github/jengelman/gradle/plugins/shadow/tasks/ShadowJar.html" target="_blank" rel="noopener noreferrer"><code>ShadowJar</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.
 Refer the <em>Gradle User Guide</em> for <a href="https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html" target="_blank" rel="noopener noreferrer">Jar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> for
 details.</p> <h2 id="configuring-output-name"><a href="#configuring-output-name" aria-hidden="true" class="header-anchor">#</a> Configuring Output Name</h2> <p>Shadow configures the default <code>shadowJar</code> task to set the output JAR's <code>destinationDir</code>, <code>baseName</code>, <code>appendix</code>,
-<code>version</code>, and <code>extension</code> to the same default values as Gradle does for all <code>Jar</code> tasks.
-Additionally, it configures the <code>classifier</code> to be <code>all</code>.</p> <p>If working with a Gradle project with the name <code>myApp</code> and version <code>1.0</code>, the default <code>shadowJar</code> task will output a
+<code>archiveVersion</code>, and <code>extension</code> to the same default values as Gradle does for all <code>Jar</code> tasks.
+Additionally, it configures the <code>classifier</code> to be <code>all</code>.</p> <p>If working with a Gradle project with the name <code>myApp</code> and archiveVersion <code>1.0</code>, the default <code>shadowJar</code> task will output a
 file at: <code>build/libs/myApp-1.0-all.jar</code></p> <p>As with all <code>Jar</code> tasks in Gradle, these values can be overridden:</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code><span class="token comment">// Output to build/libs/shadow.jar</span>
 shadowJar <span class="token punctuation">{</span>
    baseName <span class="token operator">=</span> <span class="token string">'shadow'</span>
-   classifier <span class="token operator">=</span> null
-   version <span class="token operator">=</span> null
+   classifier <span class="token operator">=</span> <span class="token string">''</span>
+   archiveVersion <span class="token operator">=</span> <span class="token string">''</span>
 <span class="token punctuation">}</span>
 </code></pre></div><h2 id="configuring-the-runtime-classpath"><a href="#configuring-the-runtime-classpath" aria-hidden="true" class="header-anchor">#</a> Configuring the Runtime Classpath</h2> <p>Each Java JAR file contains a manifest file that provides meta data about the contents of the JAR file itself.
 When using a shadowed JAR file as an executable JAR, it is assumed that all necessary runtime classes are contained
@@ -74,6 +74,6 @@ shadowJar <span class="token punctuation">{</span>
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/shadow/assets/js/9.ad524e1a.js" defer></script><script src="/shadow/assets/js/app.8beeb3c1.js" defer></script>
+    <script src="/shadow/assets/js/9.340f3311.js" defer></script><script src="/shadow/assets/js/app.496ce1b9.js" defer></script>
   </body>
 </html>
