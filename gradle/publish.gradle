@@ -34,6 +34,19 @@ def pomConfig = {
 }
 
 publishing {
+    repositories {
+        maven {
+            if (version.toString().endsWith('-SNAPSHOT'))  {
+                url 'https://artifacts.eng.appianci.net/artifactory/snapshots'
+            } else {
+                url 'https://artifacts.eng.appianci.net/artifactory/releases'
+            }
+            credentials {
+                username appianArtifactsUsername
+                password appianArtifactsApiKey
+            }
+        }
+    }
     publications {
         plugin(MavenPublication) {
             shadow.component(it)
